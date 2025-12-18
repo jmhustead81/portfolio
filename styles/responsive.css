@@ -33,8 +33,18 @@
         font-size: 1em;
     }
 
+    ul,
+    ol {
+        padding-inline-start: 10px;
+    }
+
     main {
         margin: 0 2%;
+    }
+
+    #about-img {
+        width: 50px;
+        height: 50px;
     }
 }
 

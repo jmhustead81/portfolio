@@ -1,7 +1,7 @@
 function setFooterYear() {
   var currentYear = new Date().getFullYear();
 
-  $("#footerCurrentYear").text(currentYear);
+  $("#footer-current-year").text(currentYear);
 }
 
 function smoothScroll() {
@@ -18,7 +18,7 @@ function smoothScroll() {
       if (target.length) {
         $("html, body").animate(
           {
-            scrollTop: target.offset().top,
+            scrollTop: target.offset().top - 15,
           },
           400
         );

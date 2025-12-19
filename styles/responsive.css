@@ -70,6 +70,6 @@
 
   #download-resume,
   #back-to-top {
-    background-color: var(--white);
+    background-color: var(--secondary);
   }
 }

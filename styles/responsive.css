@@ -1,74 +1,70 @@
 @media (max-width: 768px) {
-    body {
-        font-size: 0.8em;
-    }
+  .header-title {
+    font-size: 1.4em;
+  }
 
-    .header-title {
-        font-size: 1.4em;
-    }
+  .navbar a {
+    font-size: 1em;
+  }
 
-    .navbar a {
-        font-size: 1.0em;
-    }
-
-    h2 {
-        font-size: 1.2em;
-    }
+  h2 {
+    font-size: 1.2em;
+  }
 }
 
-@media (max-width: 500px) {
-    body {
-        font-size: 0.6em;
-    }
+@media (max-width: 576px) {
+  .header-title {
+    font-size: 1.2em;
+  }
 
-    .header-title {
-        font-size: 1.2em;
-    }
+  .navbar a {
+    color: transparent;
+    padding: 0;
+    width: 20%;
+  }
 
-    .navbar a {
-        font-size: 0.8em;
-    }
+  .navbar .material-symbols-outlined {
+    font-size: 1.6em;
+    color: var(--white);
+    margin-bottom: -10px;
+    margin-top: 5px;
+    width: 100%;
+  }
 
-    h2 {
-        font-size: 1em;
-    }
+  ul,
+  ol {
+    padding-inline-start: 0;
+    width: 100%;
+    list-style-type: none;
+  }
 
-    ul,
-    ol {
-        padding-inline-start: 10px;
-    }
+  li {
+    margin-top: 5px;
+  }
 
-    main {
-        margin: 0 2%;
-    }
+  main {
+    margin: 0 2%;
+  }
 
-    #about-img {
-        width: 50px;
-        height: 50px;
-    }
-}
+  #about .card .content {
+    flex-direction: column;
+  }
 
-@media (max-width: 330px) {
-    .header-title {
-        font-size: 1em;
-    }
+  #about .card .content > div {
+    text-align: center;
+  }
 
-    .navbar a {
-        font-size: 0.6em;
-        padding: 4px;
-    }
+  #about-img {
+    width: 50%;
+    height: auto;
+    margin: 0;
+  }
 
-    h2 {
-        font-size: 0.8em;
-    }
+  #about p {
+    margin-top: 10px;
+  }
 
-    main {
-        margin: 0 1%;
-    }
-}
-
-@media (max-width: 250px) {
-    .navbar a {
-        padding: 5px 0;
-    }
+  .projects-item {
+    min-width: 25vw;
+  }
 }

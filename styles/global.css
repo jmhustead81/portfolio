@@ -2,12 +2,18 @@
 :root {
   --white: #ffffff;
   --black: #000000;
+  --grey: #aaaaaa;
   --primary: #461580;
   --secondary: #20a0a1;
   --link: #0000cc;
   --card-bg: #9b9ba3;
   --footer-bg: #180350;
 }
+
+:focus-visible {
+  outline: var(--secondary) auto 1px;
+}
+
 /* Global */
 body {
   background-color: var(--black);
@@ -25,9 +31,9 @@ h4,
 h5,
 h6,
 header,
-footer,
 .navbar,
-.navbar a {
+.navbar a,
+label {
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -39,11 +45,11 @@ p,
 ul,
 ol,
 li,
-label,
 input,
 textarea,
 figure,
-figcaption {
+figcaption,
+footer {
   font-family: "Exo 2", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -104,6 +110,45 @@ a:active {
 
 figure {
   margin: 0;
+}
+
+textarea {
+  resize: none;
+  border: 1px solid var(--grey);
+}
+
+input {
+  border: 1px solid var(--grey);
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover,
+button:active,
+button:focus {
+  text-shadow: 1px 1px 2px var(--secondary);
+}
+
+button[type="submit"] {
+  background-color: var(--primary);
+  color: var(--white);
+  border: 1px solid var(--grey);
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1em;
+  padding: 4px 12px;
+}
+
+button[type="reset"] {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--grey);
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1em;
+  padding: 4px 12px;
 }
 
 /* Layout */
@@ -173,13 +218,30 @@ footer {
   text-align: center;
 }
 
+#download-resume {
+  position: fixed;
+  bottom: 20px;
+  left: 2px;
+  color: var(--primary);
+  border-radius: 50%;
+  padding: 3px;
+}
+
+#download-resume .material-symbols-outlined {
+  font-size: 2em;
+}
+
 #back-to-top {
   position: fixed;
-  bottom: 5px;
-  right: 5px;
-  height: 21px;
-  width: 21px;
-  color: var(--white);
+  bottom: 20px;
+  right: 2px;
+  color: var(--secondary);
+  border-radius: 50%;
+  padding: 3px;
+}
+
+#back-to-top .material-symbols-outlined {
+  font-size: 2em;
 }
 
 /* About */
@@ -199,7 +261,7 @@ footer {
 }
 
 /* Projects */
-.projects-container {
+#projects-container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -294,4 +356,116 @@ footer {
   background-color: var(--black);
   color: var(--white);
   cursor: pointer;
+}
+
+/* Experience */
+.experience-item {
+  border: 2px solid var(--primary);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 0;
+  padding: 10px;
+  background-color: var(--white);
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.experience-item:last-child {
+  margin-bottom: 0;
+}
+
+.experience-item::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  height: 20px;
+  background-color: var(--primary);
+  width: 10px;
+}
+
+.experience-item:last-child::after {
+  display: none;
+}
+
+.experience-item.current {
+  background-color: var(--secondary);
+}
+
+.experience-item h3,
+.experience-item h4,
+.experience-item h5 {
+  margin: 0;
+}
+
+.experience-item p {
+  margin-top: 5px;
+}
+
+/* Education */
+.education-item {
+  border: 2px solid var(--primary);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 0;
+  padding: 10px;
+  background-color: var(--white);
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.education-item:last-child {
+  margin-bottom: 0;
+}
+
+.education-item::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  height: 20px;
+  background-color: var(--primary);
+  width: 10px;
+}
+
+.education-item:last-child::after {
+  display: none;
+}
+
+.education-item.current {
+  background-color: var(--secondary);
+}
+
+.education-item h3,
+.education-item h4,
+.education-item h5 {
+  margin: 0;
+}
+
+.education-item p {
+  margin-top: 5px;
+}
+
+/* Contact */
+.contact-row {
+  margin-bottom: 5px;
+}
+
+.contact-row:last-child {
+  margin-bottom: 0;
+}
+
+.contact-row label {
+  display: block;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.contact-row input,
+.contact-row textarea {
+  width: 100%;
+  font-size: 0.8em;
+  padding: 2px 4px;
 }

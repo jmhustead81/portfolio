@@ -65,6 +65,14 @@ $(document).on("keydown", function (e) {
   }
 });
 
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 0) {
+    $("#back-to-top").fadeIn(400);
+  } else {
+    $("#back-to-top").fadeOut(400);
+  }
+});
+
 $(document).ready(function () {
   setFooterYear();
   smoothScroll();

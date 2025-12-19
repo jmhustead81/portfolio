@@ -41,23 +41,23 @@
     <header id="top">
       <h1 class="header-title">Jonathan Hustead's Online Portfolio</h1>
       <nav class="navbar">
-        <a href="#about">
+        <a href="#about" title="About">
           <span class="material-symbols-outlined"> person_search </span>
           About
         </a>
-        <a href="#projects">
+        <a href="#projects" title="Projects">
           <span class="material-symbols-outlined"> assignment_globe </span>
           Projects
         </a>
-        <a href="#experience">
+        <a href="#experience" title="Experience">
           <span class="material-symbols-outlined"> work_history </span>
           Experience
         </a>
-        <a href="#education">
+        <a href="#education" title="Education">
           <span class="material-symbols-outlined"> school </span>
           Education
         </a>
-        <a href="#contact">
+        <a href="#contact" title="Contact">
           <span class="material-symbols-outlined"> contact_mail </span>
           Contact
         </a>
@@ -89,11 +89,15 @@
                   <a
                     href="https://www.linkedin.com/in/jmhustead"
                     target="_blank"
+                    title="My LinkedIn Page"
                     >LinkedIn</a
                   >
                 </li>
                 <li>
-                  <a href="https://github.com/jmhustead81" target="_blank"
+                  <a
+                    href="https://github.com/jmhustead81"
+                    target="_blank"
+                    title="My GitHub Repos"
                     >GitHub</a
                   >
                 </li>
@@ -101,6 +105,7 @@
                   <a
                     href="docs/Resume_Jonathan-Hustead_Front-End-Software-Engineer.pdf"
                     target="_blank"
+                    title="Download My Resume"
                     >Resume</a
                   >
                 </li>
@@ -131,7 +136,7 @@
           Projects
         </h2>
         <div class="card">
-          <div class="projects-container">
+          <div id="projects-container">
             <figure class="projects-item">
               <a href="javascript:;" title="ADCAdmin">
                 <img src="images/projects/web-adcadmin.png" alt="ADCAdmin" />
@@ -288,17 +293,51 @@
           Experience
         </h2>
         <div class="card">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-          pretium quam ac quam convallis, a porttitor odio dictum. Sed dapibus
-          ornare nunc, accumsan bibendum felis hendrerit eu. Sed ornare, nibh
-          eget sagittis luctus, nulla nibh dapibus tellus, et rutrum mauris elit
-          in felis. Sed vehicula ornare erat vel interdum. Nunc sit amet iaculis
-          lacus. Vivamus vulputate, orci in scelerisque rhoncus, justo nibh
-          ornare justo, vitae mollis sem neque vitae justo. Vivamus sodales
-          auctor leo, at condimentum ante luctus dignissim. Quisque pulvinar
-          ligula ac ante tempor commodo. Donec tristique dolor id est pulvinar,
-          eu pretium felis ornare. Nunc tristique vitae nunc elementum dictum.
-          Vestibulum aliquet ullamcorper elit vitae maximus.
+          <div id="experience-container">
+            <div class="experience-item current">
+              <h3>Staff Software Engineer</h3>
+              <h4>SS&amp;C Advent / Jacksonville, Florida</h4>
+              <h5>August 2018 - Current</h5>
+              <p>
+                Oversee all UI and UX design elements by working directly with
+                development and design teams. Set page templates and design
+                patterns for team. Create full front-end layouts and
+                architecture using .NET, .NET Core, MVC, AngularJS, jQuery, and
+                KendoUI. Prototype functionality with stakeholders before
+                connecting to APIs to pull real data.
+              </p>
+            </div>
+            <div class="experience-item">
+              <h3>Web Marketing Manager</h3>
+              <h4>Optimum Healthcare IT (HIT) / Jacksonville, Florida</h4>
+              <h5>June 2016 - June 2018</h5>
+              <p>
+                Paired with the Creative Director and worked on internal and
+                external sites using jQuery, HTML, CSS, and PHP with Wordpress.
+              </p>
+            </div>
+            <div class="experience-item">
+              <h3>Senior UI Engineer</h3>
+              <h4>Clearsense / Jacksonville, Florida</h4>
+              <h5>June 2015 - June 2016</h5>
+              <p>
+                Helped a startup team by establishing and making UI and UX
+                elements to show to stakeholders using AngularJS, MVC, and
+                jQuery.
+              </p>
+            </div>
+            <div class="experience-item">
+              <h3>Lead Front-End Developer</h3>
+              <h4>Fanatics / Jacksonville, Florida</h4>
+              <h5>May 2010 - June 2015</h5>
+              <p>
+                Worked directly with IT, design, SEO, and marketing teams to
+                establish design and layout needs. Created prototype pages and
+                styles to establish brands across hundreds of sports merchandise
+                e-commerce stores.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <div id="education">
@@ -307,17 +346,20 @@
           Education
         </h2>
         <div class="card">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-          pretium quam ac quam convallis, a porttitor odio dictum. Sed dapibus
-          ornare nunc, accumsan bibendum felis hendrerit eu. Sed ornare, nibh
-          eget sagittis luctus, nulla nibh dapibus tellus, et rutrum mauris elit
-          in felis. Sed vehicula ornare erat vel interdum. Nunc sit amet iaculis
-          lacus. Vivamus vulputate, orci in scelerisque rhoncus, justo nibh
-          ornare justo, vitae mollis sem neque vitae justo. Vivamus sodales
-          auctor leo, at condimentum ante luctus dignissim. Quisque pulvinar
-          ligula ac ante tempor commodo. Donec tristique dolor id est pulvinar,
-          eu pretium felis ornare. Nunc tristique vitae nunc elementum dictum.
-          Vestibulum aliquet ullamcorper elit vitae maximus.
+          <div id="education-container">
+            <div class="education-item">
+              <h3>Master of Science</h3>
+              <h4>University of Central Florida / Orlando, Florida</h4>
+              <h5>2007</h5>
+              <p>Management Information Systems (MIS)</p>
+            </div>
+            <div class="education-item">
+              <h3>Bachelor of Science</h3>
+              <h4>University of Central Florida / Orlando, Florida</h4>
+              <h5>2005</h5>
+              <p>Information Technology (IT)</p>
+            </div>
+          </div>
         </div>
       </div>
       <div id="contact">
@@ -326,21 +368,31 @@
           Contact
         </h2>
         <div class="card">
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input
-              type="hidden"
-              name="access_key"
-              value="a78a137a-df4b-4b03-8e67-4c48ba2c4d5e"
-            />
-            <label for="name">Name</label>
-            <input type="text" name="name" required />
-            <label for="email">Email Address</label>
-            <input type="email" name="email" required />
-            <br />
-            <label for="message">Message</label>
-            <textarea name="message" required></textarea>
-            <button type="submit">Send</button>
-          </form>
+          <div id="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="a78a137a-df4b-4b03-8e67-4c48ba2c4d5e"
+              />
+              <div class="contact-row">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" required />
+              </div>
+              <div class="contact-row">
+                <label for="email">Your Email Address</label>
+                <input type="email" name="email" required />
+              </div>
+              <div class="contact-row">
+                <label for="message">Message For Me</label>
+                <textarea name="message" rows="5" required></textarea>
+              </div>
+              <div class="contact-row">
+                <button type="submit">Send Message</button>
+                <button type="reset">Start Over</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </main>
@@ -350,7 +402,15 @@
         Jonathan Hustead.
       </div>
     </footer>
-    <a id="back-to-top" href="#top" title="Back to top">
+    <a
+      id="download-resume"
+      target="_blank"
+      href="docs/Resume_Jonathan-Hustead_Front-End-Software-Engineer.pdf"
+      title="Download My Resume"
+    >
+      <span class="material-symbols-outlined"> file_save </span>
+    </a>
+    <a id="back-to-top" href="#top" title="Back to top" style="display: none">
       <span class="material-symbols-outlined"> vertical_align_top </span>
     </a>
     <div id="lightbox-bg" style="display: none"></div>

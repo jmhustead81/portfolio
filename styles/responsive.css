@@ -67,4 +67,9 @@
   .projects-item {
     min-width: 25vw;
   }
+
+  #download-resume,
+  #back-to-top {
+    background-color: var(--white);
+  }
 }

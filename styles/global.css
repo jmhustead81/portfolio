@@ -2,13 +2,14 @@
 :root {
   --white: #ffffff;
   --black: #000000;
-  --header-bg: #001a33;
+  --grey: #777777;
+  --header-bg: #113768;
   --body-bg: #001a33;
   --primary: #0598ce;
   --secondary: #113768;
   --link: #113768;
   --card-bg: #aaaaaa;
-  --footer-bg: #001a33;
+  --footer-bg: #113768;
 }
 
 :focus-visible {
@@ -62,7 +63,6 @@ h1 {
   margin-bottom: 0;
   font-size: 1.8em;
   color: var(--primary);
-  text-shadow: 2px 2px 0 var(--secondary);
 }
 
 h2 {
@@ -113,11 +113,13 @@ figure {
 
 textarea {
   resize: none;
-  border: 1px solid var(--link);
+  border: 1px solid var(--grey);
+  box-sizing: border-box;
 }
 
 input {
-  border: 1px solid var(--link);
+  border: 1px solid var(--grey);
+  box-sizing: border-box;
 }
 
 button {
@@ -127,7 +129,7 @@ button {
 button:hover,
 button:active,
 button:focus {
-  text-shadow: 1px 1px 2px var(--secondary);
+  text-shadow: 0px 0px 1px var(--link);
 }
 
 button[type="submit"] {
@@ -223,11 +225,11 @@ footer {
   left: 2px;
   color: var(--primary);
   border-radius: 50%;
-  padding: 3px;
+  padding: 5px;
 }
 
 #download-resume .material-symbols-outlined {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 #back-to-top {
@@ -236,11 +238,11 @@ footer {
   right: 2px;
   color: var(--primary);
   border-radius: 50%;
-  padding: 3px;
+  padding: 5px;
 }
 
 #back-to-top .material-symbols-outlined {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 /* About */
@@ -446,6 +448,7 @@ footer {
 /* Contact */
 .contact-row {
   margin-bottom: 5px;
+  width: 100%;
 }
 
 .contact-row:last-child {
